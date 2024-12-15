@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.AK Games</title>
+    <style>
+
+        html{
+            background-color: #016e8f;
+        }
+        .title {
+            color: #9fb9b3;
+            padding-top: 30px;
+            font-weight: 700;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .GameCard {
+            background-color: #024e82;
+            min-height: 14em;
+            width: 18em;
+            overflow: hidden;
+            border-radius: 20px;
+            margin: 25px;
+            transition: 0.7s ease;
+            margin-bottom: 50px;
+        }
+
+        .GameCard:hover {
+            transform: scale(1.15);
+        }
+
+        .image img{
+            width: 100%;
+        }
+
+        .gameInfo {
+            padding: 1em;
+            text-align: left;
+        }
+
+        .description {
+            font-size: 0.8em;
+            font-weight: 700;
+            color: #ff710d;
+        }
+
+        .name {
+            color: #d30000b2;
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-top: 10px;
+            white-space: nowrap;
+        }
+
+        .PlayNow {
+            text-decoration: none;
+            color: #04BF8A;
+        }
+
+        .PlayNow:hover {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="games">
+        <h1 class="title">Welcome to MAK game hub</h1>
+        <div class="content">
+
+
+            <div class="GameCard">
+                <div class="image">
+                    <img src="Media/snake.PNG" alt="Snake Stretch">
+                </div>
+                <div class="gameInfo">
+                    <p class="description">A game made using only squares.</p>
+                    <strong class="name">
+                        <span>Snake Stretch</span>
+                        <a href="https://itch.io/dashboard" class="PlayNow">Play Now!</a>
+                    </strong>
+                </div>
+            </div>
+
+
+            <div class="GameCard">
+                <div class="image">
+                    <img src="Media/PingPong.PNG" alt="pingpong">
+                </div>
+                <div class="gameInfo">
+                    <p class="description">You vs AI</p>
+                    <strong class="name">
+                        <span>PingPong Classic</span>
+                        <a href="https://itch.io/dashboard" class="PlayNow">Play Now</a>
+                    </strong>
+                </div>
+            </div>
+
+
+            <div class="GameCard">
+                <div class="image">
+                    <img src="Media/rover.JPG" alt="rover">
+                </div>
+                <div class="gameInfo">
+                    <p class="description">Your virtual assistant</p>
+                    <strong class="name">
+                        <span>rover</span>
+                        <a href="https://itch.io/dashboard" class="PlayNow">Play Now</a>
+                    </strong>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+
+</html>

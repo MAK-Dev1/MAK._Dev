@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.AK Websites</title>
+        <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;   
+
+        }
+            html {
+                background-color: #016e8f;
+            }
+        
+            .title {
+                color: #9fb9b3;
+                padding-top: 30px;
+                font-weight: 700;
+                font-size: 2em;
+                text-align: center;
+            }
+        
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+                padding-top: 20px;
+            }
+                    
+            .GameCard {
+                background-color: #024e82;
+                min-height: 14em;
+                width: 18em;
+                overflow: hidden;
+                border-radius: 20px;
+                margin: 25px;
+                transition: 0.7s ease;
+            }
+        
+            .GameCard:hover {
+                transform: scale(1.15);
+            }
+        
+            .image img {
+                width: 100%;
+            }
+        
+            .gameInfo {
+                padding: 1em;
+                text-align: left;
+            }
+        
+            .description {
+                font-size: 0.8em;
+                font-weight: 700;
+                color: #ff710d;
+            }
+        
+            .name {
+                color: #d30000b2;
+                display: flex;
+                justify-content: space-between;
+                text-transform: uppercase;
+                font-weight: 800;
+                margin-top: 10px;
+                white-space: nowrap;
+            }
+        
+            .PlayNow {
+                text-decoration: none;
+                color: #04BF8A;
+            }
+        
+            .PlayNow:hover {
+                color: #000000;
+            }
+        </style>
+</head>
+
+<body>
+    <section class="games">
+        <h1 class="title">Welcome to MAK web hub</h1>
+        <div class="content">
+
+            <div class="GameCard">
+                <div class="image">
+                    <img src="Media/budget.png" alt="">
+                </div>
+                <div class="gameInfo">
+                    <p class="description">Divide your income with the best budget planner.</p>
+                    <strong class="name">
+                        <span>Budget Planner</span>
+                        <a href="https://devmak1.github.io/MAK-Expense/" class="PlayNow" target="_blank">Try Now!</a>
+                    </strong>
+                </div>
+            </div>
+
+            <div class="GameCard">
+                <div class="image">
+                    <img src="Media/icon.jpg" alt="">
+                </div>
+                <div class="gameInfo">
+                    <p class="description">The website you're using now.</p>
+                    <strong class="name">
+                        <span>My Portfolio</span>
+                        <a href="https://devmak1.github.io/MAK-Dev/" class="PlayNow" target="_blank">Try Now!</a>
+                    </strong>
+                </div>
+            </div>
+        
+            <div class="GameCard">
+                <div class="image">
+                    <img src="Media/todo.png" alt="">
+                </div>
+                <div class="gameInfo">
+                    <p class="description">The best Todo-App for your tasks.</p>
+                    <strong class="name">
+                        <span>Todo App</span>
+                        <a href="https://devmak1.github.io/MAK-Todo/" class="PlayNow" target="_blank">Try Now!</a>
+                    </strong>
+                </div>
+            </div>
+        
+        
+            <div class="GameCard">
+                <div class="image">
+                    <img src="Media/banking.png" alt="">
+                </div>
+                <div class="gameInfo">
+                    <p class="description">The Banking App for traking your expenses.</p>
+                    <strong class="name">
+                        <span>Banking App</span>
+                        <a href="https://devmak1.github.io/MAK-Banking/" class="PlayNow" target="_blank">Try Now!</a>
+                    </strong>
+                </div>
+            </div>
+    
+        
+            <div class="GameCard">
+                <div class="image">
+                    <img src="Media/calculator.png" alt="">
+                </div>
+                <div class="gameInfo">
+                    <p class="description">A simple Calculator</p>
+                    <strong class="name">
+                        <span>Calculator</span>
+                        <a href="https://devmak1.github.io/MAK-Calculator/" class="PlayNow" target="_blank">Try Now!</a>
+                    </strong>
+                </div>
+            </div>
+        
+        
+        </div>
+    </section>
+</body>
+
+</html>

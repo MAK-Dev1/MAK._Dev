@@ -1,0 +1,350 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+/* Global Styles */
+* {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding: 5rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    padding: 10px 20px;
+    /* Adjust padding for all screen sizes */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Ensure nav takes full width */
+}
+
+nav a {
+    color: black;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 15px;
+    /* Adjust horizontal padding */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+nav a:hover {
+    
+    color: #016e8f;
+}
+
+/* Main Section */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #016e8f;
+    text-align: center;
+    /* Ensure text is centered */
+    padding: 0 20px;
+    /* Add horizontal padding to prevent edge-to-edge text */
+}
+
+.main h1 {
+    color: #9fb9b3;
+    font-size: 1.6em;
+    margin: 0;
+    /* Remove default margin */
+}
+
+.main span {
+    font-size: 2.7em;
+    color: #00a189;
+    display: block;
+}
+
+.head-icons {
+    display: flex;
+    gap: 1em;
+}
+
+.head-icons a {
+    font-size: 2em;
+    color: #f0972d;
+}
+
+.head-icons a:hover {
+    transition: 0.07s ease;
+    transform: scale(1.2);
+}
+
+.title {
+    color: #FFDD00;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0 0 50px #FFDD00;
+    text-decoration-line: underline ;
+}
+
+.colored {
+    color: #00614e;
+}
+
+.category {
+    color: #00614e;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.category:hover {
+    color: #f0972d;
+}
+
+.about p {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 30px 50px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #016e8f;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    margin: 40px;
+}
+
+.contact-card {
+    box-shadow: 0 5px 25px black;
+    background-color: #67b5d9;
+    min-height: 6em;
+    width: 18em;
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.1);
+}
+
+.contact-title {
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 2em;
+}
+
+.email {
+    color: #000000;
+}
+
+.hire{
+    min-height: 100vh;
+    padding: 10px;
+    background: url(Media/bg.jpg) no-repeat center/cover;
+}
+
+.hire-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 125px;
+
+}
+
+.hire button {
+    width: 7em;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #ffffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 50pt;
+    transition: 0.4s ease;
+}
+
+.hire button:hover {
+    transition: 0.4s ease;
+    background-color: #ff8a00;
+    color: #006aff;
+    box-shadow: 0 0 500px #ff8a00;
+}
+
+footer {
+    background-color: #016e8f;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: whitesmoke;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+footer span {
+    color: #00a189;
+}
+
+.foot-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.foot-icons a {
+    color: #f0972d;
+    font-size: 1.7em;
+}
+
+.foot-icons a:hover {
+    transition: 0.07s ease;
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+
+/* Tablets and Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        /* Adjust padding for tablets */
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    .main {
+        padding: 0 10px;
+        /* Reduced padding for tablets */
+    }
+
+    .main h1 {
+        font-size: 1.4em;
+    }
+
+    .main span {
+        font-size: 2em;
+    }
+
+    .head-icons a {
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .category {
+        font-size: 1.1em;
+    }
+
+    .about p {
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    .contact-card {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .contact-card:hover {
+        transform: scale(1.05);
+    }
+
+    .foot-icons a {
+        font-size: 1.5em;
+    }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 5px;
+        /* Further reduced padding for mobile */
+    }
+
+    nav a {
+        font-size: 0.9em;
+        padding: 0 5px;
+    }
+
+    .main {
+        padding: 0 5px;
+        /* Further reduced padding for mobile */
+    }
+
+    .main h1 {
+        font-size: 1.2em;
+    }
+
+    .main span {
+        font-size: 1.8em;
+    }
+
+    .head-icons a {
+        font-size: 1.3em;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .category {
+        font-size: 1em;
+    }
+
+    .about p {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .contact-card {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .contact-card:hover {
+        transform: scale(1.03);
+    }
+
+    .foot-icons a {
+        font-size: 1.3em;
+    }
+}
